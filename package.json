@@ -1,58 +1,7 @@
 {
-    "name": "re-actual",
-    "exportedEnvVars": {
-        "CAML_LD_LIBRARY_PATH": {
-            "global": true,
-            "resolveAsRelativePath": true,
-            "globalCollisionBehavior": "joinPath",
-            "val": "./_build/ocamlfind/lib/stublibs"
-        },
-        "re_version": {
-            "global": true,
-            "globalCollisionBehavior": "clobber",
-            "val": "1.7.1"
-        },
-        "FINDLIB": {
-            "global": true,
-            "resolveAsRelativePath": true,
-            "globalCollisionBehavior": "joinPath",
-            "val": "./_build/ocamlfind/lib"
-        },
-        "re_enable": {
-            "global": true,
-            "globalCollisionBehavior": "clobber",
-            "val": "enable"
-        },
-        "version": {
-            "global": true,
-            "globalCollisionBehavior": "clobber",
-            "val": "1.7.1"
-        },
-        "re_installed": {
-            "global": true,
-            "globalCollisionBehavior": "clobber",
-            "val": "true"
-        },
-        "PATH": {
-            "global": true,
-            "resolveAsRelativePath": true,
-            "globalCollisionBehavior": "joinPath",
-            "val": "./_build/ocamlfind/bin"
-        }
-    },
+    "name": "re",
     "version": "1.7.1",
     "dependencies": {
-        "@opam-alpha/ocamlfind": "*",
-        "dependency-env": "*",
-        "substs": "https://github.com/yunxing/substs.git",
-        "@opam-alpha/ocamlbuild": "*",
-        "nopam": "*",
-        "opam-installer-bin": "https://github.com/yunxing/opam-installer-bin.git"
-    },
-    "scripts": {
-        "postinstall": "eval $(dependencyEnv) && nopam && ocaml setup.ml -configure --prefix $opam_prefix && ocaml setup.ml -build && ocaml setup.ml -install && (opam-installer --prefix=$opam_prefix || true)"
-    },
-    "peerDependencies": {
-        "@opam-alpha/ocaml": ">= 4.2.3"
+       "bs-platform": "bsansouci/bucklescript#simple-native-compilation" 
     }
 }
