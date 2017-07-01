@@ -1,7 +1,7 @@
 {
     "name": "re",
     "version": "1.7.1",
-    "dependencies": {
-       "bs-platform": "bsansouci/bucklescript#simple-native-compilation" 
+    "devDependencies": {
+       "bs-platform": "bsansouci/bsb-native" 
     }
 }
