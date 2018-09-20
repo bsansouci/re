@@ -2,6 +2,6 @@
     "name": "re",
     "version": "1.7.1",
     "devDependencies": {
-       "bs-platform": "bsansouci/bsb-native" 
+       "bs-platform": "bsansouci/bsb-native#3.2.0" 
     }
 }
